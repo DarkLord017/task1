@@ -1,0 +1,414 @@
+
+
+.headerdiv {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  height: 100px;
+  background-color: rgb(2, 39, 31);
+  border-color:  black;
+  border-width: 4px;
+  position: fixed;
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  z-index: 999; 
+  opacity: 0.9;
+}
+
+.logoim {
+  display: flex;
+  justify-content: flex-start; /* Align items vertically */
+  align-items: center;
+  
+}
+
+.App-logo {
+  width: 100px;
+  height: 100px;
+  padding-right: 0px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 60px;
+  
+}
+
+.align-name{
+  overflow: hidden;
+  align-items: center;
+  margin-left: 0px;
+}
+
+
+.name{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: white;
+  font-size: 18px;
+  
+}
+
+.links {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: flex-end;
+  /* Align items to the end of the container */
+}
+
+
+.header_buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  margin-top: 18px;
+}
+
+.Home , .Register{
+  width: 70px;
+  height: 30px ;
+  margin-right: 10px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(2, 39, 31);
+  
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  opacity: 1 ;
+  border-width: 0px;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 35px;
+  padding-left: 10px;
+  padding-right: 30px;
+  cursor: pointer;
+}
+
+
+.Home:hover , .Register:hover{
+text-shadow: 5px 5px 10px black;
+}
+
+
+
+.discordlogo {
+  
+  height: 30px;
+  padding-right: 20px;
+  cursor: pointer;
+  
+  border-width: 0px;
+  
+}
+
+.instalogo{
+  
+  height: 30px;
+  padding-right: 20px;
+  cursor: pointer;
+  padding-right: 4px;
+  border-width: 0px;
+  
+
+}
+
+.main{
+  margin-top: 100px;
+  height : 800px;
+  background-color: rgb(1, 50, 40);
+  overflow: hidden; 
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 0px;
+}
+
+
+.spreadsheet{
+  padding: 0px;
+  margin: 0px ;
+  opacity: 0.4 ;
+  position: relative;
+  display: block;
+}
+
+.notbg{
+  display: grid;
+
+  position: absolute;
+  width: 100% ;
+  height: 800px;
+  margin-bottom: 0px;
+}
+
+
+
+.s2d{
+  position: absolute;
+  color: white;
+  font-weight: 1000;
+  font-size: clamp(20px, 10vw, 140px); 
+  align-self: center;
+  justify-self: center;
+  margin-top: 180px;
+  text-shadow: 3px 3px 10px black ;
+  white-space: nowrap; 
+  
+
+}
+
+.fire{
+  position: absolute;
+  align-self: flex-start;
+  justify-self: center;
+  border-width: 3px;
+  border-color: black;
+  background-color: rgb(4, 70, 56); 
+  color: white;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-radius: 20px;
+  margin-top: 220px;
+  margin-left: 15px ;
+  text-shadow: 3px 3px 10px black ;
+  
+}
+
+
+.button{
+  position: absolute;
+  align-self: flex-end;
+  margin-bottom: 100px;
+  justify-self: center;
+  margin-top: 80px;
+  margin-left: 30px;
+  display: flex;
+  
+  
+}
+
+.button1{
+  margin-right: 20px;
+  padding-left: 13px;
+  padding-right: 13px;
+  border-color: rgb(4, 70, 56); 
+  color: white;
+  background-color: transparent;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-style: solid;
+  border-width: 2.75px;
+  cursor: pointer;
+  transition: color  0.5s ease-in-out;
+  transition: background-color 0.3s ease;
+  
+}
+
+.button1:hover{
+  background-color: rgb(4, 70, 56); 
+  color: transparent ;
+ 
+}
+
+.button1::after{
+  background-color: rgb(4, 70, 56); 
+  color: white ;
+}
+
+.loner{
+  position: absolute;
+  align-self: flex-end;
+  justify-self: center;
+  border-width: 3px;
+  border-color: black;
+  background-color: rgb(4, 70, 56); 
+  color: white;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-shadow: 3px 3px 10px black ;
+  border-radius: 20px;
+  margin-left: 15px;
+
+}
+
+.Joinu{
+  cursor: pointer;
+}
+
+.Joinu:hover{
+  color: rgb(181, 181, 8) ;
+}
+
+
+
+
+@media (max-width: 900px) {
+  .s2d{
+
+    font-size: 90px;
+    white-space: wrap ;
+
+  }
+
+  .button {
+    margin-top: 430px;
+    margin-bottom: 50px; /* Adjust the margin as needed for smaller screens */
+  }
+}
+
+.Sponsornfaq{
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+
+}
+
+.FAQ{
+  height: auto;
+  background-color: rgb(4, 70, 56); 
+  margin: 0px;
+
+}
+
+.title{
+  padding-left: 10px;
+  color: white;
+  justify-self: center;
+}
+
+
+.q{
+  
+  justify-self: center;
+  border: 1px solid rgb(2, 39, 31); 
+  background-color:  rgb(2, 39, 31); 
+  color: white;
+  margin: 0px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  font-size: clamp(18px, 10vw, 25px); 
+  border-radius: 8px;
+  border-width: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  display: flex; 
+  
+}
+
+.plus{
+  padding-left: 30px;
+  white-space: nowrap ;
+  justify-content: end;
+  align-self: center;
+}
+
+
+
+
+.openans{
+  background-color: rgb(4, 70, 56); 
+  color: white;
+  margin-left: 10px;
+  margin: 0px;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  border-radius: 8px;
+  border-width: 5px;
+  margin-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  font-size: 20px;
+  
+}
+
+.closeans{
+  display: none;
+}
+
+.footer {
+  background-color: black;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-radius: 12px;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  
+}
+
+.img1 {
+  padding-top: 32px;
+  margin-bottom: 5px;
+  height: 60px;
+  align-self: flex-start;
+  padding-bottom: 28px;
+  padding-left: 17px;
+}
+
+.img3 {
+  display: flex;
+  justify-content: flex-end;
+  align-self: center; 
+  align-content: end;/* Align items to the end */
+  background-color: white;
+  width:fit-content;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 12px ;
+}
+
+.img2{
+  height: 40px;
+  padding-right:10px ;
+  cursor: pointer;
+  
+}
+
+
+
+@media (max-width: 600px) { 
+  .s2d{
+
+  font-size: 70px;
+  white-space: wrap ;
+
+}
+
+.button{
+  margin-top: -200px;
+}
+
+
+
+  .Home , .links {
+    display: none;
+    
+  }
+
+  .Sponsornfaq{
+   
+    grid-template-columns: 1fr ;
+    height: auto;
+    
+  }
+  .faq{
+    width: 100% ;
+  }
+  
+  .footer{
+    grid-template-columns: 4fr;
+    width: 70%;
+    justify-content: center;
+    margin-left: 70px;
+    
+
+  }
+
+  .img3{
+    margin-left: 20px;
+  }
+  .blocsoc{
+  white-space: nowrap ;
+  }
+}
