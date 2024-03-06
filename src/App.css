@@ -1,4 +1,6 @@
-
+ .body{
+  margin : 30px, 30px, 30px, 30px ;
+} 
 
 .headerdiv {
   display: grid;
@@ -149,7 +151,7 @@ text-shadow: 5px 5px 10px black;
   margin-top: 180px;
   text-shadow: 3px 3px 10px black ;
   white-space: nowrap; 
-  
+  margin-left: 20px;
 
 }
 
@@ -265,14 +267,14 @@ text-shadow: 5px 5px 10px black;
 .FAQ{
   height: auto;
   background-color: rgb(4, 70, 56); 
-  margin: 0px;
+  margin-right: 20px;
 
 }
 
 .title{
   padding-left: 10px;
   color: white;
-  justify-self: center;
+  text-align: center;
 }
 
 
@@ -406,9 +408,13 @@ text-shadow: 5px 5px 10px black;
   }
 
   .img3{
-    margin-left: 20px;
+    justify-self: center;
   }
   .blocsoc{
   white-space: nowrap ;
+  }
+
+  .loner{
+    margin-top: 30px;
   }
 }

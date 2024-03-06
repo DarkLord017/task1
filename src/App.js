@@ -66,6 +66,20 @@ const data  = [
 
 ]
 
+const links = [
+  'https://www.instagram.com/blocsociitr/',
+  'https://discord.gg/zZwD9UqP',
+  'https://www.linkedin.com/company/blockchain-society-iit-roorkee/',
+  'https://github.com/BlocSoc-iitr',
+
+]
+
+const handleImageClick = (i) => {
+  // Replace 'https://example.com' with the URL you want to redirect to
+  window.location.href = links[i];
+
+};
+
 
 
 return(
@@ -101,7 +115,7 @@ return(
 <button class = "button1"><span class = "content-button">REGISTER</span></button>
 <button class = "button1"><span class = "content-button">PROJECT IDEAS</span></button>
 </div>
-<p class = "loner">Looking for teammates <u className = "Joinu">Join Discord ></u></p>
+<p class = "loner">Looking for teammates <u className = "Joinu" onClick= {() => handleImageClick(1)}>Join Discord ></u></p>
 </div>
  
 </div>
@@ -139,10 +153,10 @@ return(
   <img src = {name} className = "img1" />
   </div>
   <div class ="img3">
-  <img src = {i} class = "img2" />
- <img src = {j} class = "img2" />
- <img src = {k} class = "img2" />
- <img src = {l} class = "img2" />
+  <img src = {i} class = "img2" onClick= {() => handleImageClick(0)}/>
+ <img src = {j} class = "img2" onClick= {() => handleImageClick(1)}/>
+ <img src = {k} class = "img2" onClick= {() => handleImageClick(2)}/>
+ <img src = {l} class = "img2" onClick= {() => handleImageClick(3)}/>
  </div>
 </div>
 
